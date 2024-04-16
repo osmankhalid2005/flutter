@@ -7,4 +7,5 @@ void main(List<String> arguments) {
 for(var arg in arguments) {
 print(arg);
 }
+  
 }
