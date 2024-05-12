@@ -1,11 +1,12 @@
+
+/*
+Write arrow functions for the following equations:
+*/
 void main() {
 
-var ans = A(1, 2)(3, 4);
+print( Z(2,3) );
 
-print(ans);
 }
 
-var A = (int a, int b) => 
-   (int p, int t) =>   
-   p*p + 5*t + a*a + b*b*b*b;
-
+var A = (int a, int b) => a*a + b*b*b*b;
+var Z = (int p, int t) => p*p + 5*t + A(1,2);
