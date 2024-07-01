@@ -93,13 +93,15 @@ class MyApp extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final item = students[index];
 
+                  TextStyle? newstyle = _getTextStyle(item.gpa);
+
                   return ListTile(
                       title: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                        Text("${item.id}", style: _getTextStyle(item.gpa)),
-                        Text(item.name, style: _getTextStyle(item.gpa)),
-                        Text("${item.gpa}", style: _getTextStyle(item.gpa)),
+                        Text("${item.id}", style: newstyle),
+                        Text(item.name, style: newstyle),
+                        Text("${item.gpa}", style: newstyle),
                       ]));
                 })));
   }
