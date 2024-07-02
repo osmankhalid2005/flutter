@@ -8,14 +8,6 @@ Write code to show the following list using flutter <ListView> widget
 
 import 'package:flutter/material.dart';
 
-class Student {
-  final int id;
-  final String name;
-  final double gpa;
-
-  Student(this.id, this.name, this.gpa);
-}
-
 void main() {
   runApp(MaterialApp(title: 'Flutter Demo', home: MyApp()));
 }
