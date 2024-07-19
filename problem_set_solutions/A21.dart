@@ -1,20 +1,15 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(home: HomeScreen()));
+  runApp(MaterialApp(home: HomeScreen()));
 }
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
+class HomeScreen extends StatelessWidget {
   final TextEditingController _city = TextEditingController(text: "Abbottabad");
   final TextEditingController _country =
       TextEditingController(text: "Pakistan");
+
+  HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
