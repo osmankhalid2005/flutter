@@ -7,26 +7,31 @@ List<Map<String, String>> myArray = [
   {'name': 'noman', 'age': '34'},
 ];
 
+
 Display the key and value of array elements using for and forEach.
+Display the values of the array
+
 */
 
-
 void main() {
-
   List<Map<String, String>> myArray = [
-  {'name': 'ali', 'age': '45'},
-  {'name': 'noman', 'age': '34'},
-];
+    {'name': 'ali', 'age': '45'},
+    {'name': 'noman', 'age': '34'},
+  ];
 
-print("// Using for loop");
+  // To display the key and values:
+  print("\n\n Printing key and values");
+  for (var map in myArray) {
+    map.forEach((key, value) {
+      print('$key: $value');
+    });
+  }
+
+  print("\n\n Using for loop");
   for (var mapObject in myArray) {
     // Access elements using key
     print('Name: ${mapObject['name']}');
     print('Age: ${mapObject['age']}');
     print(''); // Add an empty line for better readability
   }
-
-print("// Using forEach() function");
-myArray.forEach( (mapObject) => print("Name: ${mapObject['name']}  Age: ${mapObject['age']}"));
-
 }
