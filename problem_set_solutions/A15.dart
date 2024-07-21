@@ -8,7 +8,7 @@ List<Map<String, String>> myArray = [
 ];
 
 
-Display the key and value of array elements using for and forEach.
+Display the key and value of array elements.
 Display the values of the array
 
 */
